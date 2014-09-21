@@ -1,0 +1,4 @@
+var tplFunc = require('./tplFunc');
+module.exports = function (it) {
+var out='<div>'+(it.foo)+'</div>';return out;
+}

@@ -1,0 +1,3 @@
+module.exports = function (it) {
+var out='<div>';out+=(function(){var tpl = require('./include');return tpl(it);})(); out+='</div>';return out;
+}
