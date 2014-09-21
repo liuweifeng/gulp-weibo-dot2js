@@ -3,6 +3,9 @@
 
 > A plugin for [gulp](https://github.com/wearefractal/gulp), compiles [doT template](https://github.com/olado/doT) to .js files.
 
+![@貘吃馍香](http://tp1.sinaimg.cn/1660579792/180/5621671207/1)
+> Gulp 扩展，根据 [@貘吃馍香](http://weibo.com/itapir) 的 [grunt-brick-compile-template](https://github.com/FlashSoft/grunt-brick-compile-template.git) 迁移而来。为了简单起见，暂时去掉了循环引用判断、include 路径合法性判断等。
+
 ## Usage
 
 First, install `gulp-weibo-dot2js` as a development dependency:
@@ -31,6 +34,7 @@ gulp.src("./src/tpl/*.html")
 Type: `String`  
 
 The template utils module path
+
 模板工具方法文件路径，编译后会在源文件中被 `require` 进去。
 
 #### options.compressionSpace
@@ -38,6 +42,7 @@ Type: `Boolean`
 Default: `false`
 
 Compression spaces in template files
+
 是否去除模板里的空格。默认为否。
 
 

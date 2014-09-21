@@ -1,7 +1,7 @@
 
 {
   "name": "gulp-weibo-dot2js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A plugin for Gulp, compiles doT template to .js files",
   "keywords": [
     "gulpplugin",
@@ -12,14 +12,14 @@
     "email": "",
     "url": "https://github.com/liuweifeng"
   },
-  "repository": "https://github.com/liuweifeng/gulp-plugin-demo",
+  "repository": "https://github.com/liuweifeng/gulp-weibo-dot2js",
   "scripts": {
     "test": "istanbul test _mocha --report html -- test/*.js --reporter spec",
     "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "dependencies": {
     "through2": "*",
-    "gulp-util": "~2.2.0"
+    "gulp-util": "*"
   },
   "devDependencies": {
     "mocha": "*",
