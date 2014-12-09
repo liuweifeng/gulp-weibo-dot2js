@@ -12,7 +12,7 @@ module.exports = function(options) {
   // if (!param) {
   //  throw new gutil.PluginError(pluginName, 'No param supplied');
   // }
-  // 
+  //
   options = options || {};
 
   // see 'Writing a plugin'
@@ -51,7 +51,7 @@ module.exports = function(options) {
         incRuleList.forEach(function(incRule) {
           incRule = incRule.replace(/['"]+|\\['"]/g, '');
           var arr = incRule.split(':');
-          var _path = arr[1];
+          var _path = arr[1].replace(/^\//,'').replace(/\.html$/,'');
           var _varname = arr[2];
           func = func.replace(new RegExp('([\'"])' + incRule + '\\1', 'g'), '(function(){var tpl = require(\'' + _path + '\');return tpl(' + _varname + ');})()');
         });
