@@ -1,5 +1,5 @@
 # gulp-weibo-dot2js
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url] ![io.js supported](https://img.shields.io/badge/io.js-supported-green.svg?style=flat)
 
 > A plugin for [gulp](https://github.com/wearefractal/gulp), compiles [doT template](https://github.com/olado/doT) to .js files.
 
