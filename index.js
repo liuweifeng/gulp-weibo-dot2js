@@ -44,6 +44,7 @@ module.exports = function(options) {
       var func = doT.compile(file.contents, options.compressionSpace).toString();
       func = func.replace(/^function anonymous\(/, 'module.exports = function (');
       func = func.replace('\n/**/', ''); // for node.js 0.11
+      func = func.replace(/\r\n/g, '\n'); // for windows test
 
       // 处理 include
       var incRuleList = func.match(INCLUDE_PATTERN);
